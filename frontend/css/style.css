@@ -1,0 +1,110 @@
+body {
+	margin: auto;
+	padding: 0;
+	text-align: center;
+	font-family: Arial, sans-serif;
+}
+
+#titulo {
+	text-align: center;
+	font-size: 30px;
+}
+
+.to-do-list {
+	background-color: blue;
+	border-collapse: separate;
+	border-right: gray;
+}
+
+.to-do-list th {
+	border-collapse: separate;
+	background-color: white;
+	border-radius: 5px;
+}
+
+.kanban {
+	border-radius: 5px;
+	padding: 3px;
+	width: 30.5%;
+	min-width: 10px;
+	min-height: 5px;
+}
+
+.board {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-family: sans-serif;
+}
+
+
+#doing {
+	background-color: blue;
+}
+
+#done{
+	background-color: green;
+}
+
+.to-do-list td {
+	color: black;
+	background-color: #eee;
+	font-size: 20px;
+	width: 250px;
+	height: 150px;
+	border-radius: 3px;
+}
+
+#titulo{
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+
+#dataEntrega{
+	font-size: 20px;
+	border-radius: 5px;
+	margin-bottom: 20px;
+}
+
+#entradaCategoria{
+	border-radius: 5px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#entradaPrioridade{
+	border-radius: 5px;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+#entradaDescricao {
+	width: 80%;
+	height: 50px;
+}
+
+#adicionarTarefa{
+	border-radius: 5px;
+	background-color: gray;
+	color: white;
+}
+
+h1{
+	color: red;
+}
+
+formulario {
+	border: 1px solid #000;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 10px;
+}
+
+.fit-content{
+	width: fit-content;
+}
+
+.flex{
+	display: inline-flex;
+}

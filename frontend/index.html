@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>To-Do-List</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<h1>Armazenador de Tarefa</h1>
+<form id="formulario" method="post" action="#">
+  <div class="flex">
+    <div class="fit-content">
+      <label>Tarefa: </label>
+      <input type="text" id="titulo" placeholder="Escreva o título da tarefa" name="titulo">
+    </div>
+    <div class="fit-content">
+      <label>
+        <label>Data de Entrega: </label>
+        <input type="date" id="dataEntrega" name="data">
+      </label>
+    </div>
+    <div class="opcao-selecao fit-content">
+      <div>
+        <label>Categoria: </label>
+        <select id="entradaCategoria">
+          <option selected value="selecione">Define a categoria</option>
+          <option>Curso</option>
+          <option>Trabalho</option>
+          <option>Avulsos</option>
+        </select>
+        <label></label>
+        <label>Prioridade: </label>
+        <select id="entradaPrioridade">
+          <option selected value="selecione" name="prioridade">Defina a prioridade</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div>
+    <textarea name="mensagem" class="campo" placeholder="Descrição da tarefa" id="entradaDescricao" cols="50" rows="15"></textarea>
+  </div>
+  <button id="adicionarTarefa"> Criar Tarefa </button>
+</form>
+
+<section id="titulo"><h1>Lista de Tarefas</h1></section>
+
+<div class="board">
+  <div class ="kanban">TO-DO
+    <div id="todo"></div>
+  </div>
+  <div class ="kanban">DOING
+    <div id="doing"></div>
+  </div>
+  <div class ="kanban">DONE
+    <div id="done"></div>
+  </div>
+</div>
+<script src="javascript/scripts.js"></script>
+</body>
+</html>
